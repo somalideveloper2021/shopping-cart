@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Shopping cart</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <a href="" class="logo">Dukaan</a>
+          <div class="cart_counter">
+            <i class="bx bx-cart-alt cart-icon"></i>
+            <span class="total_counter">0</span>
+          </div>
+        </nav>
+      </div>
+      <div class="cart">
+        <div class="payment">
+          <h4>Payment method :</h4>
+          <input
+            checked
+            type="radio"
+            class="radio"
+            name="payment_method"
+            id="paypal"
+            value="paypal"
+          />
+          <label for="paypal">paypal</label>
+          <input
+            type="radio"
+            class="radio"
+            name="payment_method"
+            id="evc"
+            value="evc"
+          />
+          <label for="evc">evcplus</label>
+        </div>
+        <input type="text" id="phone" placeholder="enter phone number" />
+
+        <div class="check_out">
+          <h4>Total amount : $</h4>
+          <h4 id="total_cost">0</h4>
+          <button id="btn_checkout">Check out</button>
+          <button id="clear_cart">Clear</button>
+        </div>
+      </div>
+    </header>
+    <div class="container pt-60">
+      <div class="products products_container">
+        <div class="product">
+          <input type="hidden" id="product_item_id" value="1" />
+          <img src="./img/shoes-1.jpg" alt="" class="product_image" />
+          <div>
+            <h4 class="product_name">Soma shoes</h4>
+            <div class="d-flex jcsb alic p-10">
+              <span class="price">$10</span>
+              <button type="button" class="btn_add_to_cart">Add to cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <input type="hidden" id="product_item_id" value="2" />
+          <img src="./img/shoes-1.jpg" alt="" class="product_image" />
+          <div>
+            <h4 class="product_name">Nike shoes</h4>
+            <div class="d-flex jcsb alic p-10">
+              <span class="price">$20</span>
+              <button type="button" class="btn_add_to_cart">Add to cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <input type="hidden" id="product_item_id" value="3" />
+          <img src="./img/shoes-1.jpg" alt="" class="product_image" />
+          <div>
+            <h4 class="product_name">Adidas shoes</h4>
+            <div class="d-flex jcsb alic p-10">
+              <span class="price">$30</span>
+              <button type="button" class="btn_add_to_cart">Add to cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
