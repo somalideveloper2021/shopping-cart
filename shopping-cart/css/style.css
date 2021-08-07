@@ -127,7 +127,7 @@ nav {
   border-radius: 10px;
   padding: 20px;
   z-index: 2;
-  display: block;
+  display: none;
 }
 
 .cart.active {
